@@ -43,7 +43,9 @@ class UserAdmin(BaseUserAdmin):
         }),
     )
 
-
+#Questa porzione di codice serve per registrare i tuoi modelli alla pagina admin
+#Così da poterli utilizzare
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Recipe)
 admin.site.register(models.Tag)
+admin.site.register(models.Ingredient)
